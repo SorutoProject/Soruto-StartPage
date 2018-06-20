@@ -5,6 +5,14 @@ function search(){
 	var searchValue = $("#text2").val();
 	var sw = encodeURI(searchValue);
 	var service = encodeURI(document.getElementById("text1").value.toLowerCase()).split("%").join("");
+	if(searchValue == ""){
+		alert("検索キーワードが入力されていません");
+		return false;
+	}
+	else if(service == ""){
+		alert("サービス名が入力されていません");
+		return false;
+	}
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', "services/" + service + ".txt", true);
 		xhr.onreadystatechange = function(){
