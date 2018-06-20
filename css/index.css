@@ -1,5 +1,5 @@
 body{
-  background-image: url("../img/CIMG0070.JPG");
+  background:#efefef;
   background-size:cover;
 }
 #terminal{
@@ -42,4 +42,21 @@ body{
   font-weight: bold;
   text-align: center;
   width:100%;
+}
+.services{
+border-radius:6px;
+width:72px;
+color:#3c3c3c;
+}
+.services:hover{
+  background:#fafafa;
+    
+}
+#services{
+  position: absolute;
+  top:240px;
+  left:0;
+  right: 0;
+  margin:0 auto;
+  text-align: center;
 }

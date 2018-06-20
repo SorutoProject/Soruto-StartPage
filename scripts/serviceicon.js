@@ -1,0 +1,1 @@
+var icons = '<b>よく使われるサイト</b><br><a href="javascript:void(0);" onclick="serviceSet(\'Google\')" class="services">Google</a><br><a href="javascript:void(0);" onclick="serviceSet(\'YouTube\')" class="services">YouTube</a>';

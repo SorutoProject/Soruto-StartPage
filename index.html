@@ -6,9 +6,11 @@
 		<link rel="stylesheet" href="css/jquery-ui.min.css">
 		<script src="scripts/jquery.js"></script>
 		<script src="scripts/jquery-ui.min.js"></script>
+		<script src="scripts/serviceicon.js"></script>
+		<script src="scripts/servicenames.js"></script>
 		<script src="scripts/startpage.js"></script>
 	</head>
 	<body>
-	<div id="terminal"><span id="title">Soruto Start Page</span><br><span id="word1"></span><input type="text" id="text1" placeholder="検索サイト"><br><input type="text" id="text2" placeholder="検索ワード"><input type="button" id="searchButton" onclick="search();" value="検索"></div>
+	<div id="terminal"><span id="title">Soruto Start Page</span><br><span id="word1"></span><input type="text" id="text1" placeholder="検索サイト"><br><input type="text" id="text2" placeholder="検索ワード" onkeypress="Key_on(event);"><input type="button" id="searchButton" onclick="search();" value="検索"></div><div id="services"></div>
 	</body>
 </html>

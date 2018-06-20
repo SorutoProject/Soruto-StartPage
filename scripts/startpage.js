@@ -1,3 +1,6 @@
+window.onload = function(){
+	document.getElementById("services").innerHTML = icons;
+}
 function search(){
 	var searchValue = $("#text2").val();
 	var sw = encodeURI(searchValue);
@@ -23,6 +26,15 @@ function openPage(url,w){
 		var swurl = url.split("*").join(w);
 		location.href=swurl;
 }
+function serviceSet(s){
+	$("#text1").val(s);
+	$("#text2").focus();
+}
+function Key_on(event){
+	if(event.keyCode === 13){
+		search();
+	}
+}
 $(function() {
 				$('#text1').autocomplete({
                     source: ["Google","Yahoo","YouTube","ニコニコ動画"],
@@ -46,4 +58,4 @@ $(function() {
                     delay: 300,
                     minLength: 1,
                 });
-            });
+});
